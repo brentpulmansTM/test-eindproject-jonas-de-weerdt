@@ -30,7 +30,7 @@ all_animals = {
                 {"name": "elephant", "gender": "M"},
                 {"name": "blue-and-yellow macaw", "gender": "M"}, {"name": "hornbill", "gender": "M"},
                 {"name": "rhinoceros", "gender": "F"},
-                {"name": "kangaroo", "gender": "F"}, {"name": "ostridge", "gender": "F"},
+                {"name": "kangaroo", "gender": "F"}, {"name": "ostrich", "gender": "F"},
                 {"name": "bison", "gender": "M"},
                 {"name": "wallaby", "gender": "F"}, {"name": "badger", "gender": "F"}]
 }
