@@ -18,6 +18,12 @@ all_animals = {
                 {"name": "wallaby", "gender": "F"}, {"name": "badger", "gender": "F"}]
 }
 
+@app.get("/animal")
+def random_animal():
+    print("test random")
+
+    randomnumber = random.randint(0, len(all_animals["animals"]) + 1)
+    return {"animal": all_animals["animals"][randomnumber]}
 
 @app.get("/animal")
 def chosen_animal(name: str = Query(default=None, min_length=4, max_length=10),
@@ -34,12 +40,6 @@ def chosen_animal(name: str = Query(default=None, min_length=4, max_length=10),
     return animal_json
 
 
-@app.get("/animal")
-def random_animal():
-    print("test random")
-
-    randomnumber = random.randint(0, len(all_animals["animals"]) + 1)
-    return {"animal": all_animals["animals"][randomnumber]}
 
 
 class AnimalIn(BaseModel):
