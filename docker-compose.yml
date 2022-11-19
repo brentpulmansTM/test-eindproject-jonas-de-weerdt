@@ -1,7 +1,9 @@
 version: "3.9"
 services:
- randomizer-service:
-  image: miverboven/python-api-test
+ animal-service:
+  build: 
+    dockerfile: Dockerfile
+    context: .
   ports:
     - "8000:8000"
 
