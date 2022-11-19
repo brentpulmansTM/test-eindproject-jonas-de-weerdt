@@ -22,17 +22,17 @@ app.add_middleware(
 
 
 all_animals = {
-    "animals": [{"name": "badger", "gender": "M"}, {"name": "lion", "gender": "F"}, {"name": "wolf", "gender": "F"},
-                {"name": "porcupine", "gender": "M"}, {"name": "cheetah", "gender": "M"},
-                {"name": "giraffe", "gender": "M"},
-                {"name": "panda", "gender": "F"}, {"name": "gorilla", "gender": "M"}, {"name": "tiger", "gender": "F"},
-                {"name": "koala", "gender": "F"}, {"name": "jaguar", "gender": "M"},
-                {"name": "elephant", "gender": "M"},
-                {"name": "blue-and-yellow macaw", "gender": "M"}, {"name": "hornbill", "gender": "M"},
-                {"name": "rhinoceros", "gender": "F"},
-                {"name": "kangaroo", "gender": "F"}, {"name": "ostrich", "gender": "F"},
-                {"name": "bison", "gender": "M"},
-                {"name": "wallaby", "gender": "F"}, {"name": "badger", "gender": "F"}]
+    "animals": [{"id":0,"name": "badger", "gender": "M"}, {"id":1,"name": "lion", "gender": "F"}, {"id":2,"name": "wolf", "gender": "F"},
+                {"id":3,"name": "porcupine", "gender": "M"}, {"id":4,"name": "cheetah", "gender": "M"},
+                {"id":5,"name": "giraffe", "gender": "M"},
+                {"id":6,"id":7,"name": "panda", "gender": "F"}, {"id":8,"name": "gorilla", "gender": "M"}, {"id":9,"name": "tiger", "gender": "F"},
+                {"id":10,"name": "koala", "gender": "F"}, {"id":11,"name": "jaguar", "gender": "M"},
+                {"id":12,"name": "elephant", "gender": "M"},
+                {"id":13,"name": "blue-and-yellow macaw", "gender": "M"}, {"id":14,"name": "hornbill", "gender": "M"},
+                {"id":15,"name": "rhinoceros", "gender": "F"},
+                {"id":16,"name": "kangaroo", "gender": "F"}, {"id":17,"name": "ostrich", "gender": "F"},
+                {"id":18,"name": "bison", "gender": "M"},
+                {"id":19,"name": "wallaby", "gender": "F"}, {"id":20,"name": "badger", "gender": "F"}]
 }
 
 
