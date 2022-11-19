@@ -18,28 +18,23 @@ all_animals = {
                 {"name": "wallaby", "gender": "F"}, {"name": "badger", "gender": "F"}]
 }
 
-@app.get("/animal")
+
+@app.get("/animal/random")
 def random_animal():
-    print("test random")
+    randomnumber = random.randint(0, len(all_animals["animals"]))
+    return {"animal": all_animals["animals"][randomnumber-1]}
 
-    randomnumber = random.randint(0, len(all_animals["animals"]) + 1)
-    return {"animal": all_animals["animals"][randomnumber]}
 
 @app.get("/animal")
-def chosen_animal(name: str = Query(default=None, min_length=4, max_length=10),
+def chosen_animal(name: str = Query(default=None, min_length=4, max_length=30),
                   gender: str = Query(default=None, min_length=1, max_length=1)):
     animal_json = {"animals": []}
-    print("test")
     for i in range(0, len(all_animals["animals"])):
-        print(i)
-        print(animal_json)
         if name == all_animals["animals"][i]["name"] or gender == all_animals["animals"][i]["gender"]:
             animal_json["animals"].append(
                 {"name": all_animals["animals"][i]["name"], "gender": all_animals["animals"][i]["gender"]})
 
     return animal_json
-
-
 
 
 class AnimalIn(BaseModel):
