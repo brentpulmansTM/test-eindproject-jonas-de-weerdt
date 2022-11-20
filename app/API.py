@@ -58,7 +58,7 @@ class AnimalIn(BaseModel):
     id: int
 
     
-class AnimalOut(Basemodel):
+class AnimalOut(BaseModel):
     name: str
     gender: str
 
