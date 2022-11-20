@@ -56,14 +56,11 @@ def chosen_animal(name: str = Query(default=None, min_length=4, max_length=30),
 
 class AnimalIn(BaseModel):
     id: int
-
-    
-class AnimalOut(BaseModel):
     name: str
     gender: str
+    
 
-@app.post("/animal/create/", response_model=AnimalOut)
+
+@app.post("/animal/create/", response_model=AnimalIn)
 def create_animal(animal: AnimalIn):
-    AnimalOut.name = all_animals["animals"][AnimalIn.id]["name"]
-    AnimalOut.gender = all_animals["animals"][AnimalIn.id]["gender"]
     return animal
