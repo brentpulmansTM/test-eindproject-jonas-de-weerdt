@@ -6,20 +6,4 @@ services:
     context: .
   ports:
     - "8000:8000"
-
- mysql-server:
-  image: mysql:latest
-  restart: always
-  environment:
-      MYSQL_ROOT_PASSWORD: secret
-      MYSQL_DATABASE: mysql
-  volumes:
-    - mysql-data:/var/lib/mysql
-    - ./Docenten_api_namen.sql:/docker-entrypoint-initdb.d/Docenten_api_namen.sql
-  ports:
-    - "3306:3306"
-  
-
-
-volumes:
-  mysql-data:
+    
