@@ -1,7 +1,7 @@
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
-import crudoperations
+import crud
 
 pwd_context = CryptContext(schemes=["argon2", "bcrypt"], deprecated="auto")
 
